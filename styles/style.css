@@ -78,7 +78,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 60%;
-    height: 370px;
+    height: auto;
     margin-top: 1%;
     margin-bottom: 1%;
 }
@@ -146,8 +146,8 @@ body {
     background-color: var(--color-hover);}
 
 .seccion_derecha {
-    width: 40%;
-    height: 370px;
+    width: auto;
+    height: 100%;
     margin-left: 10%;
     background-color: var(--white);
     border-radius: 20px;
