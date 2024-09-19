@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Números</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <main class="presentacion__contenido">
+
+        <div class="seccion__titulo__logo">
+            <div class="presentacion__logo">
+                <img class="Logo" src="./assets/Logo.png" alt="Logotipo">
+            </div>
+
+            <h1 class="presentacion__titulo">
+                ORGANIZADOR DE NÚMEROS
+            </h1>
+
+            <h2 class="presentacion_subtitulo">
+                Esta herramienta te permite ingresar 10 números enteros aleatorios de forma desordenada, para luego
+                mostrarlos en orden ascendente y descendente.
+            </h2>
+        </div>
+
+        <section class="seccion_procedimiento">
+            <div class="seccion_izquierda">
+                <form id="numeroForm">
+                    <label for="numeros">Escribe 10 números enteros, separados por comas:</label>
+                    <input type="text" id="numeros" name="numeros" placeholder="Ej: 5, 3, 9, 1, 7, 2, 6, 4, 8, 10"
+                        required>
+                    <input type="submit" value="ORDENAR">
+                </form>
+            </div>
+
+            <div class="seccion_derecha">
+
+                <img src="./assets/Muñeco.png" alt="illustrationNotFound" class="illustrationNotFound"
+                    id="illustrationNotFound">
+
+                <div class="no-message" id="no-message">
+                    <p class="texto4">No haz ingresado ningún dato.</p>
+                    <p class="texto5">Por favor, ingresa 10 números enteros separados por comas.</p>
+                </div>
+
+                <div class="resultado" id="resultado-box" style="display: none;">
+                    <h3 class="texto1"> Números ingresados:</h3>
+                    <p id="numeros_ingresados"></p>
+
+                    <h3 class="texto2"> Ordenados de menor a mayor:</h3>
+                    <p id="orden_menor_mayor"></p>
+
+                    <h3 class="texto3">Ordenados de mayor a menor:</h3>
+                    <p id="orden_mayor_menor"></p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Desarrollado por Brenda Paola Navarro Alatorre</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </main>
+</body>
+
+</html>

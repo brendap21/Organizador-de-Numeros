@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-primario: #0A3871;
+    --color-secundario: #343A40;
+    --color-terciario: #072B61;
+    --color-cuaternario: #F3F5FC;
+    --color-quinteario: #;
+    --color-hover: #31363F;
+
+    --white: #FFFFFF;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-inter: 'Inter', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-cuaternario);
+    color: var(--color-primario);
+}
+
+.presentacion__contenido {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    height: 100%;
+}
+
+.seccion__titulo__logo {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.presentacion__logo {
+    width: 15%;
+    height: auto;
+    margin: 3% 5%;
+    margin-bottom: 0%;
+}
+
+.Logo {
+    max-width: 50%;
+    max-height: auto;
+    width: auto;
+    height: auto;
+}
+
+.presentacion__titulo {
+    font-size: 3rem;
+    font-family: var(--fuente-krona);
+    align-self: center;
+    margin: 1%;
+}
+
+.presentacion_subtitulo {
+    font-size: 1.4rem;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    align-self: center;
+    margin: 1%;
+    text-align: center;
+    width: 60%;
+    height: 5%;
+    color: var(--color-secundario);
+}
+
+.seccion_procedimiento {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 370px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.seccion_izquierda {
+    width: 50%;
+    height: inherit;
+    align-content: center;
+    margin-left: 10%;
+}
+
+.seccion_izquierda form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 370px;
+    justify-content: center;
+}
+
+.seccion_izquierda label {
+    font-family: var(--fuente-inter);
+    color: var(--color-terciario);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+.seccion_izquierda input[type="text"] {
+    font-family: var(--fuente-inter);
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--color-secundario);
+    background-color: var(--color-cuaternario);
+    border: none;
+    padding: 10px;
+    width: 90%;
+    height: 20%;
+    align-self: center;
+    box-sizing: border-box;
+    margin-top: 5%;
+    text-align: center ;
+}
+
+.seccion_izquierda input[type="submit"] {
+    font-family: var(--fuente-krona);
+    font-size: 1.2rem;
+    color: var(--white);
+    background-color: var(--color-terciario);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: auto;
+    height: 20%;
+    align-self: center;
+}
+
+.seccion_izquierda input[type="submit"]:hover {
+    background-color: var(--color-hover);}
+
+.seccion_derecha {
+    width: 40%;
+    height: 370px;
+    margin-left: 10%;
+    background-color: var(--white);
+    border-radius: 20px;
+    align-content: center;
+    text-align: center;
+}
+
+.resultado {
+    padding: 1rem;
+}
+
+.illustrationNotFound {
+    margin-top: 1%;
+    width: 60%;
+    align-self: center;
+}
+
+.texto4 {
+    font-weight: 500;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.texto5 {
+    font-weight: 300;
+    margin-top: 1%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 3%;
+}
+
+.texto4, .texto5 {
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    text-align: center;
+    color: var(--color-terciario);
+} 
+
+.texto1, .texto2, .texto3 {
+    font-family: var(--fuente-inter);
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-align: center;
+    color: var(--color-terciario);
+    padding: 3%;
+}
+
+#numeros_ingresados,
+#orden_menor_mayor,
+#orden_mayor_menor {
+    font-family: var(--fuente-inter);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+    text-align: center;
+    padding: 5%;
+}
+
+.footer {
+    text-decoration: none;
+    background-color: var(--color-terciario);
+    padding: 3%;
+    color: var(--color-cuaternario);
+    text-align: center;
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    height: 10%;
+    width: 100%;
+    align-self: flex-end;
+}
